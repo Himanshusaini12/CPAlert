@@ -18,7 +18,7 @@
   bottom: 0px;
   background-color: orange;
   width: 100%;
-  height: 10%;
+  height: auto;
   color: red;
 }
 .footer h1 {
@@ -27,4 +27,12 @@
   justify-content: center;
   bottom: 10px;
   text-shadow: rgba(red, green, blue, alpha);
+}
+.body {
+  position: absolute;
+  bottom: 0px;
+  background-color: orange;
+  width: 100%;
+  height: auto;
+  color: blue;
 }
