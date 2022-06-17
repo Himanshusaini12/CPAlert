@@ -4,7 +4,7 @@ import "./styles.css";
 function Header() {
   return (
     <div className="heading">
-      <h1>CPAlert</h1>
+      <h1>CP Alert</h1>
     </div>
   );
 }

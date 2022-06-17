@@ -20,6 +20,7 @@
   width: 100%;
   height: auto;
   color: red;
+  left: 0px;
 }
 .footer h1 {
   display: flex;
@@ -30,9 +31,19 @@
 }
 .body {
   position: absolute;
-  bottom: 0px;
-  background-color: orange;
+  bottom: 80px;
+  background-color: rgb(165, 162, 11);
   width: 100%;
-  height: auto;
-  color: blue;
+  height: 74%;
+  left: 0px;
+  text-align: center;
+  padding: auto;
+  color: black;
+}
+.body h1 {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  bottom: 10px;
+  padding-top: 130px;
 }
