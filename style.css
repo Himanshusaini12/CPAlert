@@ -1,10 +1,20 @@
 .bell{
-	content: url('https://api.iconify.design/fa-regular/bell.svg?color=red&height=38');
+	content: url('https://api.iconify.design/fa6-regular/bell.svg?color=red&height=70');
+	position: relative;
+	right: 3px;
+	top: 11px;
 }
 
 .heart
 {
-  content: url('https://api.iconify.design/codicon/heart-filled.svg?color=red&height=27');
+  content: url('https://api.iconify.design/charm/heart.svg?color=red&height=27');
+}
+
+div.sticky{
+	position: sticky;
+	top: 0;
+	background-color: #0B0C10;
+	padding-top: 3px;
 }
 
 .hl{
@@ -22,7 +32,7 @@ body{
 	margin-top: 25px;
 	margin-bottom: 2px;
 	padding-left: 70px;
-	font-size: 50px;
+	font-size: 70px;
 	color: white;
 }
 
