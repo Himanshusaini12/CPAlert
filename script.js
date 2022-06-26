@@ -8,13 +8,15 @@ fetch('https://codeforces.com/api/contest.list')
 
 		data.result.map((values)=>{
 			if(values.phase == "BEFORE"){
-			displaydata+= `<p>Name : ${values.name} 
-			Duration : ${values.durationSeconds/3600} hours
-			`;
+			displaydata+= `
+				<div class="cards">
+					 ${values.name}
+					<p class="content"> Duration : ${values.durationSeconds/3600} hours</p>
+				</div>`;
 		}
 		});
 
-		document.getElementById('codeforces').innerHTML = displaydata;
+		document.getElementById('codeforces').innerHTML += displaydata;
 })
 
 //---------------------------codechef-------------------------------
@@ -31,13 +33,15 @@ fetch('https://kontests.net/api/v1/code_chef')
 
         data.map((values)=>{
 			{
-			displaydata+= `<p>Name : ${values.name} <br/> 
-			start_time : ${values.start_time} hours
-			`;
+			displaydata+= `
+			<div class="cards">
+					 ${values.name}
+					<p class="content"> Start Time : ${values.start_time} hours</p>
+				</div>`;
 		}
 		});
 
-		document.getElementById('codechef').innerHTML = displaydata;
+		document.getElementById('codechef').innerHTML += displaydata;
 })
 
 //-----------------------------------leetcode------------------------------
@@ -53,11 +57,13 @@ fetch('https://kontests.net/api/v1/leet_code')
 
         data.map((values)=>{
 			{
-			displaydata+= `<p>Name : ${values.name} <br/> 
-			start_time : ${values.start_time} hours
-			`;
+			displaydata+= `
+			<div class="cards">
+					 ${values.name}
+					<p class="content"> Start Time : ${values.start_time} hours</p>
+				</div>`;
 		}
 		});
 
-		document.getElementById('leetcode').innerHTML = displaydata;
+		document.getElementById('leetcode').innerHTML += displaydata;
 })
