@@ -24,15 +24,17 @@
 	top: 20px;
 	right: 30px;
 	border-radius: 20px;
+	background-color: black;
 }
 
 .hide{
 	display: none;
 }
+
 div.sticky{
 	position: sticky;
 	top: 0;
-	background-color: #0B0C10;
+	background-color: white;
 	padding-top: 3px;
 }
 
@@ -44,16 +46,12 @@ div.sticky{
 	margin-right: 10px;
 }
 
-body{
-	background-color: #0B0C10;
-}
 #heading{
-
 	margin-top: 2px;
 	margin-bottom: 2px;
 	padding-left: 30px;
 	font-size: 40px;
-	color: white;
+	color: black;
 }
 
 .platforms{
@@ -70,7 +68,6 @@ body{
 	margin-top: 20px;
 	padding: 30px;
 	padding-top: 0px;
-	color: antiquewhite;
 }
 
 .cards{
@@ -83,13 +80,11 @@ body{
 	border-color: #66FCF1;
 	margin-top: 28px;
 	font-size: 20px;
-	color: white;
 	min-width: 150px;
 }
 
 #footer{
 	text-align: center;
 	font-size: 25px;
-	color: white;
 	padding-bottom: 20px;
 }
