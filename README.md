@@ -1,4 +1,6 @@
-# CPAlert
+<h1 align="center">
+	<a href="arjunsharma1152.github.io/cpalert/"><img height=100 src="logo.jpeg" alt="CPAlert"/></a>
+</h1>
 
-It is a one stop platform where you can find the upcoming contests and the active contests on the famous coding platforms like Codechef and Codeforces .
-You can also check your ratings and can get regular updates on your email.
+It is a one stop platform where you can find the upcoming contests and the active contests on the famous coding platforms like Codechef, Codeforces & Leetcode.
+
