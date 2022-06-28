@@ -4,20 +4,25 @@ fetch('https://codeforces.com/api/contest.list')
 	return alldata.json();
 })
 .then((data) => {
+
 		var displaydata = "";
+
+		data.result.reverse();
 
 		data.result.map((values)=>{
 			if(values.phase == "BEFORE"){
+				let time = new Date(values.startTimeSeconds*1000);
 			displaydata+= `
 				<div class="cards">
 					 ${values.name}
-					<p class="content"> Duration : ${values.durationSeconds/3600} hours</p>
+					<p class="content"> Start Time : ${time.toDateString()}  &nbsp; ${time.toLocaleTimeString()}</p>
 				</div>`;
 		}
 		});
 
 		document.getElementById('codeforces').innerHTML += displaydata;
 })
+
 
 //---------------------------codechef-------------------------------
 
@@ -28,6 +33,11 @@ fetch('https://kontests.net/api/v1/code_chef')
 })
 .then((data) => {
 		var displaydata = "";
+
+		data.pop();
+		data.pop();
+
+		data.reverse();
 
         data.map((values)=>{
 			{
@@ -50,6 +60,8 @@ fetch('https://kontests.net/api/v1/leet_code')
 })
 .then((data) => {
 		var displaydata = "";
+
+		data.reverse();
 
         data.map((values)=>{
 			{
