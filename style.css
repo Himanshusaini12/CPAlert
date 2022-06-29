@@ -5,7 +5,7 @@
 	top: 11px;
 }
 
-.heart
+.ert
 {
   content: url('https://api.iconify.design/charm/heart.svg?color=red&height=27');
 }
@@ -93,3 +93,32 @@ body{
 	color: white;
 	padding-bottom: 20px;
 }
+
+
+
+
+
+#foot {
+	animation: pulse 3s ease-out infinite;
+	//background: radial-gradient(250px 250px, #ffffff, rgba(0, 0, 0, 0) 1000px), #333;
+	overflow: hidden;
+	font-family: 'Akaya Telivigala', cursive;
+	}
+
+
+
+
+	@keyframes pulse {
+	0% {
+	  font-size: 20px;
+	}
+	50% {
+	  font-size: 30px;
+	}
+	100% {
+	  font-size: 20px;
+	}
+	}
+
+
+	
